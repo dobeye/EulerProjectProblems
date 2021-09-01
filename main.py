@@ -1,8 +1,8 @@
-import Problem5 as p5
+import Problem8 as p8
 
 
 def main():
-    print(p5.FindNumber())
+    print(p8.FindDigitMultiple(530420752963, 13))
 
 
 if __name__ == "__main__":
