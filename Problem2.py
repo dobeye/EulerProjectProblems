@@ -1,8 +1,8 @@
 def FibonacciUpTo(maxVal):
     fibonacciList = [1, 1]
-    while fibonacciList[len(fibonacciList) - 1] <= maxVal:
-        fibonacciList.append(fibonacciList[len(fibonacciList) - 1] + fibonacciList[len(fibonacciList) - 2])
-    fibonacciList.remove(fibonacciList[len(fibonacciList) - 1])
+    while fibonacciList[-1] <= maxVal:
+        fibonacciList.append(fibonacciList[-1] + fibonacciList[-2])
+    fibonacciList.remove(fibonacciList[-1])
     return fibonacciList
 
 

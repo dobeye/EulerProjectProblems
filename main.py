@@ -1,8 +1,9 @@
-import Problem8 as p8
+import Utils
+import Problem14 as p14
 
 
 def main():
-    print(p8.FindDigitMultiple(530420752963, 13))
+    print(p14.CollatzLongestInRange(1000000))
 
 
 if __name__ == "__main__":

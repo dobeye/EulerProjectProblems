@@ -1,3 +1,6 @@
+import Utils
+
+
 def FindPalindromeProduct(digitAmount):
     ret = 0
     i = 10 ** digitAmount - 1
@@ -15,16 +18,12 @@ def FindPalindromeProduct(digitAmount):
     return ret
 
 
-def Ex(exponent):
-    return 10 ** exponent
-
-
 def CheckPalindrome(contender):
     k = 1
     while k <= len(str(contender)) / 2:
-        nK = len(str(contender)) - k
-        if int(contender / Ex(nK) - int(contender / Ex(nK + 1)) * 10) != int(
-                contender / Ex(k - 1) - int(contender / Ex(k)) * 10):
+        n_k = len(str(contender)) - k
+        if int(contender / Utils.Ex(n_k) - int(contender / Utils.Ex(n_k + 1)) * 10) != int(
+                contender / Utils.Ex(k - 1) - int(contender / Utils.Ex(k)) * 10):
             return False
         k += 1
     return True
